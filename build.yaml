@@ -20,7 +20,6 @@ phases:
     commands:
       - cd /opt && git clone https://github.com/shylaharild/invitation.git
       - cd /opt/invitation
-      - git checkout SH-01-Template-for-wedding-site
       - mkdir -p /opt/images
       - cp -r /opt/invitation/* /opt/images/
       - rm -rf /opt/images/README.md /opt/images/LICENSE.txt /opt/images/index-with-bridal-party.html /opt/images/build.yaml
