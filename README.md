@@ -5,7 +5,7 @@ An HTML5 responsive design using jquery waypoints & scroll-to for a pleasant sin
 
 A live demo can be viewed at:
 
-   http://sarahlovesbradley.com
+   http://invitation.3shtech.com
 
 ========
 
