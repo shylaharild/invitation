@@ -13,22 +13,17 @@ phases:
     commands:
       # Installs Git
       - apt-get install -y git
-      - apt-get update -y
   pre_build:
     commands:
       - git --version
-      - git help
   build:
     commands:
       - cd /opt && git clone https://github.com/shylaharild/invitation.git
       - cd /opt/invitation
       - git checkout SH-01-Template-for-wedding-site
       - mkdir -p /opt/images
-      - which rsync
-      - which aws
-      - ls /usr/bin/
-      - ls /sbin/
-      #- rsync -av --progress ./ /opt/images/ --exclude .git --exclude README.md --exclude LICENSE.txt --exclude index-with-bridal-party.html
+      - cp -r /opt/invitation/* /opt/images/
+      - rm -rf /opt/images/README.md /opt/images/LICENSE.txt /opt/images/index-with-bridal-party.html /opt/images/build.yaml
   post_build:
     commands:
       - aws s3 sync --delete --cache-control "max-age=31536000" /opt/images/ s3://invitation.3shtech.com/testing/
