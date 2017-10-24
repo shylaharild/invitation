@@ -1,4 +1,4 @@
-Shamanthan's Wedding Website
+responsive-wedding
 ------------------
 
 An HTML5 responsive design using jquery waypoints & scroll-to for a pleasant single-page navigation. This template makes use of media queries and scales well for all mobile form-factors.
@@ -7,11 +7,9 @@ A live demo can be viewed at:
 
    http://invitation.3shtech.com
 
+========
 
-
-
-
-
+![Preview](https://github.com/shylaharild/invitation/blob/SH-01-Template-for-wedding-site/preview.png?raw=true)
 
 ## LICENSE
 

@@ -1,0 +1,35 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      # Installs Git
+      - apt-get install -y git
+  pre_build:
+    commands:
+      - git --version
+  build:
+    commands:
+      - cd /opt && git clone https://github.com/shylaharild/invitation.git
+      - cd /opt/invitation
+      - git checkout SH-01-Template-for-wedding-site
+      - mkdir -p /opt/images
+      - cp -r /opt/invitation/* /opt/images/
+      - rm -rf /opt/images/README.md /opt/images/LICENSE.txt /opt/images/index-with-bridal-party.html /opt/images/build.yaml
+  post_build:
+    commands:
+      - aws s3 sync --delete --cache-control "max-age=31536000" /opt/images/ s3://invitation.3shtech.com/testing/
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
