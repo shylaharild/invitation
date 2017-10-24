@@ -9,7 +9,7 @@ A live demo can be viewed at:
 
 ========
 
-![Preview](https://github.com/bmgdev/responsive-wedding/blob/master/preview.png?raw=true)
+![Preview](https://github.com/shylaharild/invitation/blob/SH-01-Template-for-wedding-site/preview.png?raw=true)
 
 ## LICENSE
 
