@@ -871,3 +871,51 @@ a.email {
     border-radius: 2px;
 }
 
+.contact-box{
+	margin:2em 0;
+}
+
+.text{
+	margin:1em 0;
+}
+.text input[type="text"]{
+	width:80%;
+	padding:10px;
+	margin-top:1%;
+	display:inline-block;
+	border:1px solid #cacaca;
+	outline:none;
+	-webkit-appearance: none;
+}
+.text textarea{
+	width:80%;
+	padding:10px;
+	height:250px;
+	resize:none;
+	margin-top:1%;
+	margin-right:5%;
+	border:1px solid #cacaca;
+	outline:none;
+	-webkit-appearance: none;
+}
+.text input[type="submit"]{
+	font-size:1em;
+	color:#fff;
+	text-transform:uppercase;
+	margin-top:1%;
+	background:#d53e3e;
+	padding:10px 30px;
+	outline:none;
+	-webkit-appearance: none;
+	cursor:pointer;
+	border:0;
+}
+.text input[type="submit"]:hover{
+	background:#3c3a3e;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
