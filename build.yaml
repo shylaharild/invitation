@@ -22,7 +22,7 @@ phases:
       - cd /opt/invitation
       - mkdir -p /opt/images
       - cp -r /opt/invitation/* /opt/images/
-      - rm -rf /opt/images/README.md /opt/images/LICENSE.txt /opt/images/index-with-bridal-party.html /opt/images/build.yaml
+      - rm -rf /opt/images/README.md /opt/images/LICENSE.txt /opt/images/build.yaml
   post_build:
     commands:
       - aws s3 sync --delete --cache-control "max-age=31536000" /opt/images/ s3://invitation.3shtech.com/
