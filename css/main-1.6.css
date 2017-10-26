@@ -63,11 +63,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Bradley Greenwood
-   ========================================================================== */
-
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -919,3 +914,28 @@ a.email {
 	-ms-transition:0.5s all;
 }
 
+/*-- Footer Part Starts Here --*/
+.footer{
+	background:#d53e3e;
+	padding:0.5em 0;
+	margin-right:5%;
+	margin-left:5%;
+}
+.footer p{
+	font-size:1em;
+	margin-right:5%;
+	margin-left:5%;
+	color:#fff;
+	font-weight:400;
+}
+.footer p a{
+	color:#00ffe4;
+	margin-right:5%;
+	margin-left:5%;
+}
+.footer p a:hover{
+	color:#fff;
+	margin-right:5%;
+	margin-left:5%;
+}
+/*-- Footer Part Ends Here --*/
