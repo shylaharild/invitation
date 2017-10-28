@@ -811,6 +811,20 @@ section h2 {
     border-radius: 8px;
 }
 
+.responsive-image.family {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
+.responsive-image.family img {
+    border: 10px solid #090909;
+
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
 img.theinn  {
 
     text-align: center;
